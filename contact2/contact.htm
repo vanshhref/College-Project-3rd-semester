@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: grid;
+      grid-gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ICO CRYPTOS Help & Support</h1>
+  </header>
+
+  <main>
+    <form id="contactForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="response"></div>
+  </main>
+
+  <script>
+    function submitForm() {
+      // You can add AJAX code here to send the form data to the server.
+      // For simplicity, let's just show a success message.
+      document.getElementById("response").innerHTML = "<p>Thank you for contacting us! We will get back to you soon.</p>";
+      // You may also want to clear the form after submission.
+      document.getElementById("contactForm").reset();
+    }
+  </script>
+</body>
+
+</html>
