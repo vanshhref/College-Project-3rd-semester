@@ -1,6 +1,6 @@
 const date = () => {
 
-    let date_main = new Date("Feb, 09, 2025 , 09:00:00");
+    let date_main = new Date("Feb, 24, 2025 , 09:00:00");
     // console.log(date_main);
     let current_date = new Date();
     // console.log(current_date);
